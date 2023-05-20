@@ -1,0 +1,13 @@
+main {
+    padding: 1rem;
+}
+.grid {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns:  150px 150px 150px;
+    gap:.5rem;
+}
+app-square {
+    width: 150px;
+    height: 150px;
+}

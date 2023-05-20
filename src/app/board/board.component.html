@@ -1,0 +1,17 @@
+<main>
+  <h1>TIC TAC TOE</h1>
+
+  <button mat-stroked-button color="primary" (click)="newGame()">
+    Start new Game
+  </button>
+
+  <h2 *ngIf="winner">Player {{ winner }} won</h2>
+
+  <div class="grid">
+    <app-square
+      *ngFor="let square of squares; let i = index"
+      [value]="square"
+      (click)="makeMove(i)"
+    ></app-square>
+  </div>
+</main>
